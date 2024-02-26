@@ -292,9 +292,9 @@ if ($psv -ge 7) {
 function CallLang($clg) {
 
     if ($mirror) {
-        $urlLang = "http://localhost/SpotX/scripts/installer-lang/$clg.ps1"
+        $urlLang = "https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/scripts/installer-lang/$clg.ps1"
     }
-    else { $urlLang = "http://localhost/SpotX/scripts/installer-lang/$clg.ps1" }
+    else { $urlLang = "https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/scripts/installer-lang/$clg.ps1" }
     
     $ProgressPreference = 'SilentlyContinue'
     
@@ -321,9 +321,9 @@ if ($langCode -eq 'ru') {
     $ru = $true
 
     if ($mirror) {
-        $urlru = "http://localhost/SpotX/ru.json"
+        $urlru = "https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/ru.json"
     }
-    else { $urlru = "http://localhost/SpotX/ru2.json" }
+    else { $urlru = "https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/ru2.json" }
 
     $webjsonru = (Invoke-WebRequest -useb -Uri $urlru).Content | ConvertFrom-Json
 }
@@ -899,9 +899,9 @@ $ch = $null
 
 if ($mirror) {
 
-    $url = "http://localhost/SpotX/patches/patches.json"
+    $url = "https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/patches/patches.json"
 }
-else { $url = "http://localhost/SpotX/patches.json" }
+else { $url = "https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/patches.json" }
 
 $retries = 0
 
