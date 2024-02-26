@@ -14,11 +14,11 @@ function Run-SpotX {
     $retryInterval = 5
 
     if ($mirror) { 
-        $url = 'http://localhost/SpotX/run.ps1' 
+        $url = 'https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/run.ps1' 
         $params += " -m"
     }
     else {
-        $url = 'http://localhost/SpotX/run2.ps1'
+        $url = 'https://github.com/Vortex-AR/1/blob/315c5eaec26f9e04afa699c4e7904f24e33108ee/run2.ps1'
     }
 
     for ($retry = 1; $retry -le $maxRetryCount; $retry++) {
